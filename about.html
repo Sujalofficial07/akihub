@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About / Contact — AkiHub</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header small">
+<div class="container header-inner">
+<a class="logo" href="/">AkiHub</a>
+</div>
+</header>
+
+
+<main class="container">
+<section class="glass contact-panel">
+<h2 class="section-title">About AkiHub</h2>
+<p>AkiHub collects information about Minecraft launchers — features, download links, and official references — to help users find the best launcher for their platform.</p>
+
+
+<h3>Contact</h3>
+<p>If you want to contribute or report incorrect links, please open an issue on the GitHub repo or message us on Discord.</p>
+
+
+<form id="contactForm" class="contact-form">
+<label> Your email
+<input type="email" id="contactEmail" class="neon-input" placeholder="you@example.com">
+</label>
+<label> Message
+<textarea id="contactMessage" class="neon-input" placeholder="Hi — I found an issue..."></textarea>
+</label>
+<button id="contactSubmit" class="btn btn-neon">Send Message</button>
+</form>
+
+
+<p class="muted small">For a static site, this form will open your email client. To collect messages, connect a server or Google Form.</p>
+</section>
+</main>
+
+
+<footer class="site-footer small">
+<div class="container footer-inner">
+<div class="muted">AkiHub — Built with ❤️</div>
+</div>
+</footer>
+
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+e.preventDefault();
+const email = document.getElementById('contactEmail').value || 'no-reply@example.com';
+const msg = document.getElementById('contactMessage').value || '';
+const subject = encodeURIComponent('AkiHub Contact');
+const body = encodeURIComponent('From: ' + email + '\n\n' + msg);
+window.location = `mailto:owner@example.com?subject=${subject}&body=${body}`;
+});
+</script>
+</body>
+</html>
