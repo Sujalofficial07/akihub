@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AkiHub — Minecraft Launchers Hub</title>
+<meta name="description" content="All Minecraft Launchers in One Place — AkiHub" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="/">AkiHub</a>
+<nav class="nav">
+<a href="#platforms">Launchers</a>
+<a href="about.html">About</a>
+<a href="login.html" class="btn btn-ghost">Login</a>
+</nav>
+</div>
+</header>
+
+
+<main>
+<section class="hero neon-hero">
+<div class="container hero-inner glass">
+<h1 class="neon-title">Minecraft Launchers Hub</h1>
+<p class="tagline">All Minecraft Launchers in One Place</p>
+<div class="cta-row">
+<a href="#platforms" class="btn btn-neon">Explore Launchers</a>
+<a href="login.html" class="btn btn-outline">Login / Sign Up</a>
+</div>
+
+
+<div class="search-filter">
+<input id="searchInput" type="search" placeholder="Search launchers, features..." class="neon-input" />
+<select id="platformFilter" class="neon-select">
+<option value="all">All Platforms</option>
+<option value="Android">Android</option>
+<option value="iOS">iOS</option>
+<option value="Windows">Windows</option>
+<option value="macOS">macOS</option>
+<option value="Linux">Linux</option>
+</select>
+</div>
+</div>
+</section>
+
+
+<section id="platforms" class="platforms container">
+<h2 class="section-title">Launchers by Platform</h2>
+
+
+<div id="launcherGrid" class="grid"></div>
+
+
+</section>
+
+
+<section class="download-stats container glass small-panel">
+<h3>Site Demo Notes</h3>
+<p>This is a static demo. Download counters and login are demo-only using browser storage. To enable real counters or auth, connect a free backend (Firebase / Supabase / Google Apps Script).</p>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<div>
+<strong>AkiHub</strong> — Minecraft Launchers Hub
+<p class="muted">Credits: logos & links belong to respective launcher projects. Use responsibly.</p>
